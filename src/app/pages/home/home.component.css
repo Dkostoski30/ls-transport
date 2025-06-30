@@ -1,0 +1,151 @@
+.hero-transport {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  overflow: hidden;
+  position: relative;
+  min-height: 70vh;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  color: white;
+}
+
+/* Mobile first styles */
+.hero-transport .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.hero-transport .hero-title {
+  line-height: 1.15;
+  font-size: 2.25rem;
+  max-width: 320px;
+  margin-bottom: 1rem;
+  letter-spacing: 0.04em;
+}
+
+.hero-transport .hero-subtitle {
+  font-size: 1.1rem;
+  max-width: 350px;
+  margin-bottom: 2rem;
+  font-weight: 500;
+  opacity: 0.85;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero-transport .hero-buttons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 350px;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.hero-transport .hero-buttons a {
+  border-width: 2px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  flex-grow: 1;
+  font-size: 1.25rem;
+  padding: 0.75rem 1.5rem;
+}
+
+.btn-outline-light:hover,
+.btn-outline-light:focus {
+  background-color: #e1e8f7;
+  color: #123060;
+  border-color: #e1e8f7;
+  outline: none;
+}
+
+.btn-light.text-primary:hover,
+.btn-light.text-primary:focus {
+  background-color: #c9d6ff;
+  outline: none;
+}
+
+/* Hero image styling */
+.hero-image-wrapper {
+  order: 3; /* Put below text/buttons on mobile */
+  margin-top: 2rem;
+  width: 240px;
+  height: 155px;
+}
+
+.hero-image-wrapper svg.hero-image {
+  width: 100%;
+  height: 100%;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+/* Tablet breakpoint */
+@media (min-width: 768px) {
+  .hero-transport .hero-title {
+    font-size: 3rem;
+    max-width: 480px;
+  }
+  .hero-transport .hero-subtitle {
+    font-size: 1.25rem;
+    max-width: 480px;
+  }
+  .hero-image-wrapper {
+    width: 280px;
+    height: 180px;
+    margin-top: 2.5rem;
+  }
+  .hero-image-wrapper svg.hero-image {
+    margin-bottom: 1.5rem;
+  }
+}
+
+/* Desktop layout override */
+@media (min-width: 992px) {
+  .hero-transport {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
+  .hero-transport .container {
+    flex-direction: row !important;
+    justify-content: space-between !important;
+    text-align: left !important;
+    align-items: center !important;
+  }
+
+  .hero-transport .hero-title,
+  .hero-transport .hero-subtitle,
+  .hero-transport .hero-buttons {
+    max-width: 520px;
+    text-align: left;
+  }
+
+  .hero-transport .hero-title {
+    font-size: 3.5rem;
+  }
+
+  .hero-transport .hero-subtitle {
+    font-size: 1.25rem;
+  }
+
+  .hero-image-wrapper {
+    order: 2 !important; /* Bring image to right side */
+    margin-top: 0;
+    margin-bottom: 0 !important;
+    width: 320px;
+    height: 210px;
+    flex-shrink: 0;
+  }
+
+  .hero-image-wrapper svg.hero-image {
+    width: 100%;
+    height: 100%;
+  }
+
+  .hero-transport .hero-buttons {
+    justify-content: flex-start !important;
+    max-width: 400px;
+  }
+}

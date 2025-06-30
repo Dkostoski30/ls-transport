@@ -1,0 +1,40 @@
+/* Gradient button */
+.btn-gradient {
+  background: linear-gradient(45deg, #1e3c72, #2a5298);
+  color: #fff;
+  border: none;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-gradient:hover,
+.btn-gradient:focus {
+  background: linear-gradient(45deg, #2a5298, #1e3c72);
+  box-shadow: 0 0 15px rgba(42, 82, 152, 0.7);
+  outline: none;
+}
+
+/* Floating label input padding fix for icons */
+.form-floating > input.ps-5,
+.form-floating > textarea.ps-5 {
+  padding-left: 3rem !important;
+}
+
+/* Message icon position tweak */
+.form-floating > textarea + label {
+  padding-left: 3rem !important;
+}
+
+/* Overlay on map */
+.contact-overlay {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  z-index: 10;
+}
+
+/* Responsive tweaks */
+@media (max-width: 991.98px) {
+  .contact-overlay {
+    position: static !important;
+    max-width: 100% !important;
+    margin-top: 1rem;
+  }
+}
