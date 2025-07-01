@@ -1,13 +1,14 @@
 import {Component, HostListener} from '@angular/core';
 import {RouterLink, RouterLinkActive} from '@angular/router';
-import {NgClass, NgIf} from '@angular/common';
+import {NgClass, NgIf, NgOptimizedImage} from '@angular/common';
 
 @Component({
   selector: 'app-navbar',
   imports: [
     RouterLink,
     RouterLinkActive,
-    NgIf
+    NgIf,
+    NgOptimizedImage
   ],
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.css'
