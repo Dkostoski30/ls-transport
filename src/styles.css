@@ -1,1 +1,18 @@
-/* You can add global styles to this file, and also import other style files */
+/* Set a dark neutral background behind the container */
+body, html {
+  background: #121212; /* very dark gray/black */
+  min-height: 100vh;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #cfd8dc;
+}
+
+/* Optional: if you want a subtle pattern or gradient behind container */
+.page-wrapper {
+  background: linear-gradient(135deg, #1e1e2f, #121212);
+  min-height: 100vh;
+  padding: 4rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}

@@ -1,22 +1,59 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark px-3">
-  <a class="navbar-brand d-flex align-items-center" routerLink="/">
-    <img src="assets/logo.png" alt="LS Transport" height="40" class="me-2">
+<nav class="navbar navbar-expand-lg dark-navbar px-4 py-3 shadow-sm">
+  <a class="navbar-brand d-flex align-items-center fw-bold fs-4" routerLink="/">
+    <img
+      src="assets/logo.png"
+      alt="LS Transport"
+      height="48"
+      class="me-3 rounded-circle border border-2 border-purple shadow-sm"
+    />
     LS Transport
   </a>
-  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+
+  <button
+    class="navbar-toggler border-0"
+    type="button"
+    aria-label="Toggle navigation"
+    (click)="toggleMobileMenu()"
+  >
     <span class="navbar-toggler-icon"></span>
   </button>
-  <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-    <ul class="navbar-nav">
+
+  <!-- Desktop menu -->
+  <div class="collapse navbar-collapse justify-content-end d-none d-lg-flex">
+    <ul class="navbar-nav align-items-center gap-3">
       <li class="nav-item">
-        <a class="nav-link" routerLink="/">Home</a>
+        <a class="nav-link dark-nav-link" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Home</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" routerLink="/our-trucks">Our Trucks</a>
+        <a class="nav-link dark-nav-link" routerLink="/our-trucks" routerLinkActive="active">Our Trucks</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" routerLink="/contact">Contact</a>
+        <a class="nav-link dark-nav-link" routerLink="/contact" routerLinkActive="active">Contact</a>
+      </li>
+      <li class="nav-item">
+        <a href="tel:+078296600" class="btn btn-outline-light btn-sm shadow-sm fw-semibold ms-lg-4" title="Call Us">
+          <i class="bi bi-telephone-fill me-1"></i> 078 296 600
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Mobile dropdown menu -->
+  <div *ngIf="mobileMenuOpen" class="w-100 d-lg-none animate-slide-down">
+    <ul class="navbar-nav flex-column mt-3 gap-2">
+      <li class="nav-item">
+        <a class="nav-link dark-nav-link" [routerLinkActiveOptions]="{ exact: true }" routerLink="/" routerLinkActive="active" (click)="toggleMobileMenu()">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link dark-nav-link" routerLink="/our-trucks" routerLinkActive="active" (click)="toggleMobileMenu()" >Our Trucks</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link dark-nav-link" routerLink="/contact" routerLinkActive="active" (click)="toggleMobileMenu()">Contact</a>
+      </li>
+      <li class="nav-item">
+        <a href="tel:+078296600" class="btn btn-outline-light btn-sm fw-semibold w-100" (click)="toggleMobileMenu()">
+          <i class="bi bi-telephone-fill me-1"></i> Call 078 296 600
+        </a>
       </li>
     </ul>
   </div>

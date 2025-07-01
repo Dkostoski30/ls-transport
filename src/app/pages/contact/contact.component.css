@@ -1,40 +1,53 @@
-/* Gradient button */
-.btn-gradient {
-  background: linear-gradient(45deg, #1e3c72, #2a5298);
-  color: #fff;
+.dark-bg-gradient {
+  background: linear-gradient(135deg, #1e1e2f 0%, #121212 100%);
+  color: #cfd8dc;
+}
+
+.dark-card {
+  background-color: #24243e;
+  color: #cfd8dc;
   border: none;
+}
+
+.dark-input {
+  background-color: #1e1e2f;
+  color: #cfd8dc;
+  border: 1px solid #444a82;
+}
+
+.dark-input::placeholder {
+  color: #a0aec0;
+}
+
+.dark-input:focus {
+  background-color: #2c2c4a;
+  border-color: rgba(134, 158, 252, 0.8);
+  color: #cfd8dc;
+  box-shadow: 0 0 8px rgba(134, 158, 252, 0.7);
+}
+
+.dark-overlay {
+  background: rgba(30, 30, 46, 0.85);
+  color: #cfd8dc;
+}
+
+.text-purple-accent {
+  color: rgba(134, 158, 252, 0.8);
+}
+
+.text-light-secondary {
+  color: #a0aec0;
+}
+
+.btn-gradient {
+  background: linear-gradient(135deg, rgba(134, 158, 252, 0.9), rgba(102, 126, 234, 0.85));
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
   transition: background 0.3s ease, box-shadow 0.3s ease;
 }
 
-.btn-gradient:hover,
-.btn-gradient:focus {
-  background: linear-gradient(45deg, #2a5298, #1e3c72);
-  box-shadow: 0 0 15px rgba(42, 82, 152, 0.7);
-  outline: none;
-}
-
-/* Floating label input padding fix for icons */
-.form-floating > input.ps-5,
-.form-floating > textarea.ps-5 {
-  padding-left: 3rem !important;
-}
-
-/* Message icon position tweak */
-.form-floating > textarea + label {
-  padding-left: 3rem !important;
-}
-
-/* Overlay on map */
-.contact-overlay {
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
-  z-index: 10;
-}
-
-/* Responsive tweaks */
-@media (max-width: 991.98px) {
-  .contact-overlay {
-    position: static !important;
-    max-width: 100% !important;
-    margin-top: 1rem;
-  }
+.btn-gradient:hover {
+  background: linear-gradient(135deg, rgba(102, 126, 234, 1), rgba(134, 158, 252, 1));
+  box-shadow: 0 0 12px rgba(134, 158, 252, 0.6);
 }

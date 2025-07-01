@@ -1,1 +1,31 @@
-<p>our-trucks works!</p>
+<div class="container py-5 my-5">
+  <h2 class="page-title mb-2">Our Trucks</h2>
+  <p class="page-subtitle mb-5">
+    Powerful and reliable vehicles for all your international transport needs.
+  </p>
+
+  <div class="truck-cards">
+    <div class="truck-card" *ngFor="let truck of trucks">
+      <div class="truck-image">
+        <img [src]="truck.image" [alt]="truck.name" />
+      </div>
+      <div class="truck-info">
+        <h3 class="truck-name">{{ truck.name }}</h3>
+        <p class="truck-description">{{ truck.description }}</p>
+
+        <ul class="truck-specs list-unstyled">
+          <li><strong>Model:</strong> {{ truck.model }}</li>
+          <li><strong>Engine:</strong> {{ truck.engine }}</li>
+          <li><strong>Capacity:</strong> {{ truck.capacity }}</li>
+          <li><strong>Year:</strong> {{ truck.year }}</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="text-center mt-5">
+    <a routerLink="/contact" class="btn btn-outline-primary btn-lg shadow-sm">
+      Request a Quote
+    </a>
+  </div>
+</div>

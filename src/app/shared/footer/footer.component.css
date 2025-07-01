@@ -1,0 +1,56 @@
+.footer-modern {
+  background: linear-gradient(135deg, #1e1e2f, #121212);
+  color: #e0e6f0; /* Brighter off-white for general text */
+  padding: 3rem 1.5rem 2rem;
+
+  h5, h6 {
+    color: #868efc;
+    letter-spacing: 0.05em;
+    font-weight: 700;
+  }
+
+  p,
+  li {
+    font-weight: 300;
+    color: #cbd5e1; /* Soft light gray for paragraphs and list items */
+  }
+
+  a.footer-link {
+    color: #d1d9e6; /* Slightly brighter gray for links */
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-weight: 500;
+
+    &:hover {
+      color: #868efc; /* Purple accent on hover */
+      text-decoration: underline;
+    }
+  }
+
+  .footer-divider {
+    border-color: #444766;
+    margin: 2.5rem 0 1.5rem;
+  }
+
+  .footer-bottom {
+    font-weight: 400;
+    font-size: 0.875rem;
+    color: #cbd5e1; /* Match body text brightness */
+  }
+
+  .footer-social {
+    a.social-icon {
+      font-size: 1.4rem;
+      color: #d1d9e6;
+      transition: color 0.3s ease, transform 0.25s ease;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+
+      &:hover {
+        color: #868efc;
+        transform: scale(1.2);
+      }
+    }
+  }
+}

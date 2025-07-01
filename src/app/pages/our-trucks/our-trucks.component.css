@@ -1,0 +1,116 @@
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  color: #cfd8dc;
+  background: linear-gradient(135deg, #1e1e2f 0%, #121212 100%);
+  border-radius: 16px;
+  padding: 3rem 2rem;
+  box-shadow: 0 10px 30px rgba(134, 158, 252, 0.4);
+}
+
+.page-title {
+  color: #868efc;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+.page-subtitle {
+  text-align: center;
+  color: #a0aec0;
+  font-weight: 400;
+  font-size: 1.1rem;
+  margin-bottom: 3rem;
+}
+
+.truck-cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+
+  @media (min-width: 768px) {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.truck-card {
+  background: #24243e;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(134, 158, 252, 0.3);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: default;
+
+  &:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 14px 40px rgba(134, 158, 252, 0.5);
+    cursor: pointer;
+  }
+}
+
+.truck-image img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+.truck-info {
+  padding: 1.5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.truck-name {
+  color: #868efc;
+  font-weight: 700;
+  font-size: 1.7rem;
+}
+
+.truck-description {
+  font-weight: 300;
+  font-size: 1rem;
+  color: #d1d9e6;
+  min-height: 70px; /* keep consistent card height */
+}
+
+.truck-specs {
+  color: #a0aec0;
+  font-weight: 500;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  li {
+    margin-bottom: 0.5rem;
+
+    strong {
+      color: #868efc;
+      font-weight: 600;
+      margin-right: 0.3rem;
+    }
+  }
+}
+
+.btn-outline-primary {
+  border-color: rgba(134, 158, 252, 0.8);
+  color: #868efc;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 600;
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover {
+    background-color: rgba(134, 158, 252, 0.8);
+    color: #121212;
+    box-shadow: 0 0 15px rgba(134, 158, 252, 0.9);
+  }
+}
