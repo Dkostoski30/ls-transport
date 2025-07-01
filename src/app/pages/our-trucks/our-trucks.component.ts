@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import {RouterLink} from '@angular/router';
+import { RouterLink } from '@angular/router';
+
 interface Truck {
   name: string;
   model: string;
@@ -16,9 +17,8 @@ interface Truck {
   standalone: true,
   imports: [CommonModule, RouterLink],
   templateUrl: './our-trucks.component.html',
-  styleUrl: './our-trucks.component.css'
+  styleUrls: ['./our-trucks.component.css']
 })
-
 export class OurTrucksComponent {
   trucks: Truck[] = [
     {
@@ -40,6 +40,27 @@ export class OurTrucksComponent {
       description:
         'The Mercedes-Benz Actros combines efficiency with innovation. Ideal for forwarding and logistics, it ensures reliable performance on long hauls.',
       image: 'assets/trucks/mercedes-actros.jpg',
+    },
+    // Renault Master with placeholder images
+    {
+      name: 'Renault Master',
+      model: 'Master L3H2',
+      engine: '2.3L Inline-4 Diesel',
+      capacity: '3.5 Tons',
+      year: 2021,
+      description:
+        'The Renault Master L3H2 offers versatile cargo space and efficient performance, great for urban deliveries and medium-distance transport.',
+      image: 'https://via.placeholder.com/400x250?text=Renault+Master+L3H2',
+    },
+    {
+      name: 'Renault Master',
+      model: 'Master L2H2',
+      engine: '2.3L Inline-4 Diesel',
+      capacity: '3.0 Tons',
+      year: 2020,
+      description:
+        'The Renault Master L2H2 is compact yet powerful, suited for flexible logistics and easy maneuverability in city environments.',
+      image: 'https://via.placeholder.com/400x250?text=Renault+Master+L2H2',
     },
   ];
 }
