@@ -7,7 +7,7 @@
   <div class="truck-cards">
     <div class="truck-card" *ngFor="let truck of trucks">
       <div class="truck-image">
-        <img href="truck.image" [alt]="truck.name" />
+        <img [src]="truck.image" [alt]="truck.name" height="100%"/>
       </div>
       <div class="truck-info">
         <h3 class="truck-name">{{ truck.name }}</h3>
@@ -17,6 +17,7 @@
           <li><strong>Model:</strong> {{ truck.model }}</li>
           <li><strong>Engine:</strong> {{ truck.engine }}</li>
           <li><strong>Capacity:</strong> {{ truck.capacity }}</li>
+          <li><strong>Carrying capacity:</strong> {{ truck.carrying_capacity }}</li>
           <li><strong>Year:</strong> {{ truck.year }}</li>
         </ul>
       </div>
