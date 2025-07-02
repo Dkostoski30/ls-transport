@@ -1,6 +1,7 @@
 import {Component, HostListener} from '@angular/core';
 import {RouterLink, RouterLinkActive} from '@angular/router';
 import {NgClass, NgIf, NgOptimizedImage} from '@angular/common';
+import { CONTACT_INFO } from '../constants/contact-info';
 
 @Component({
   selector: 'app-navbar',
@@ -15,7 +16,7 @@ import {NgClass, NgIf, NgOptimizedImage} from '@angular/common';
 })
 export class NavbarComponent {
   mobileMenuOpen = false;
-
+  contactInfo = CONTACT_INFO;
   toggleMobileMenu() {
     this.mobileMenuOpen = !this.mobileMenuOpen;
   }

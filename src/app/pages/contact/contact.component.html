@@ -48,15 +48,15 @@
             <h5 class="fw-bold text-purple-accent mb-3">Contact Info</h5>
             <p class="mb-2 text-light-secondary">
               <i class="bi bi-geo-alt-fill me-2 text-purple-accent"></i>
-              123 Transport St, Skopje, North Macedonia
+              {{ contactInfo.address }}
             </p>
-            <p class="mb-2 text-light-secondary">
+            <p class="mb-2 text-light-secondary" *ngFor="let phone of contactInfo.phones">
               <i class="bi bi-telephone-fill me-2 text-purple-accent"></i>
-              +389 70 123 456
+              {{ phone.number }}
             </p>
             <p class="mb-0 text-light-secondary">
               <i class="bi bi-envelope-fill me-2 text-purple-accent"></i>
-              info&#64;lstransport.com
+              {{ contactInfo.email }}
             </p>
           </div>
         </div>
