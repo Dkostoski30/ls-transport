@@ -4,7 +4,7 @@
       ngSrc="ls-transport_logo.png"
       alt="LS Transport"
       height="48"
-      class="me-3 rounded-circle border border-2 border-purple shadow-sm"
+      class="me-3 shadow-sm"
       width="48"/>
     LS Transport
   </a>
@@ -32,7 +32,7 @@
       </li>
       <li class="nav-item">
         <a href="tel:+078296600" class="btn btn-outline-light btn-sm shadow-sm fw-semibold ms-lg-4" title="Call Us">
-          <i class="bi bi-telephone-fill me-1"></i> 078 296 600
+          <i class="bi bi-telephone-fill me-1"></i> {{ contactInfo.phone }}
         </a>
       </li>
     </ul>
@@ -52,7 +52,7 @@
       </li>
       <li class="nav-item">
         <a href="tel:+078296600" class="btn btn-outline-light btn-sm fw-semibold w-100" (click)="toggleMobileMenu()">
-          <i class="bi bi-telephone-fill me-1"></i> Call 078 296 600
+          <i class="bi bi-telephone-fill me-1"></i> Call {{contactInfo.phone}}
         </a>
       </li>
     </ul>

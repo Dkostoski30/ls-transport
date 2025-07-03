@@ -1,46 +1,46 @@
 .dark-bg-gradient {
   background: linear-gradient(135deg, #1e1e2f 0%, #121212 100%);
-  color: #cfd8dc;
+  color: #e0f7fa;
 }
 
 .dark-card {
-  background-color: #24243e;
-  color: #cfd8dc;
+  background-color: #1b1b2d;
+  color: #e0f7fa;
   border: none;
 }
 
 .dark-input {
   background-color: #1e1e2f;
-  color: #cfd8dc;
-  border: 1px solid #444a82;
+  color: #e0f7fa;
+  border: 1px solid #4dd0e1; /* light teal */
 }
 
 .dark-input::placeholder {
-  color: #a0aec0;
+  color: #80deea; /* soft cyan */
 }
 
 .dark-input:focus {
   background-color: #2c2c4a;
-  border-color: rgba(134, 158, 252, 0.8);
-  color: #cfd8dc;
-  box-shadow: 0 0 8px rgba(134, 158, 252, 0.7);
+  border-color: rgba(0, 188, 212, 0.8);
+  color: #e0f7fa;
+  box-shadow: 0 0 8px rgba(0, 188, 212, 0.6);
 }
 
 .dark-overlay {
   background: rgba(30, 30, 46, 0.85);
-  color: #cfd8dc;
+  color: #e0f7fa;
 }
 
 .text-purple-accent {
-  color: rgba(134, 158, 252, 0.8);
+  color: #00bcd4; /* replaced with cyan accent */
 }
 
 .text-light-secondary {
-  color: #a0aec0;
+  color: #80deea;
 }
 
 .btn-gradient {
-  background: linear-gradient(135deg, rgba(134, 158, 252, 0.9), rgba(102, 126, 234, 0.85));
+  background: linear-gradient(135deg, rgba(0, 188, 212, 0.9), rgba(0, 172, 193, 0.85));
   color: #ffffff;
   border: none;
   border-radius: 8px;
@@ -48,6 +48,6 @@
 }
 
 .btn-gradient:hover {
-  background: linear-gradient(135deg, rgba(102, 126, 234, 1), rgba(134, 158, 252, 1));
-  box-shadow: 0 0 12px rgba(134, 158, 252, 0.6);
+  background: linear-gradient(135deg, rgba(0, 172, 193, 1), rgba(0, 188, 212, 1));
+  box-shadow: 0 0 12px rgba(0, 188, 212, 0.6);
 }

@@ -1,10 +1,10 @@
 .footer-modern {
   background: linear-gradient(135deg, #1e1e2f, #121212);
-  color: #e0e6f0; /* Brighter off-white for general text */
+  color: #e0f7fa; /* Brighter off-white with a cyan tint */
   padding: 3rem 1.5rem 2rem;
 
   h5, h6 {
-    color: #868efc;
+    color: #00bcd4; /* Cyan accent for headers */
     letter-spacing: 0.05em;
     font-weight: 700;
   }
@@ -12,43 +12,43 @@
   p,
   li {
     font-weight: 300;
-    color: #cbd5e1; /* Soft light gray for paragraphs and list items */
+    color: #b2ebf2; /* Soft light teal-gray for readability */
   }
 
   a.footer-link {
-    color: #d1d9e6; /* Slightly brighter gray for links */
+    color: #b2ebf2; /* Slightly brighter teal-gray for links */
     text-decoration: none;
     transition: color 0.3s ease;
     font-weight: 500;
 
     &:hover {
-      color: #868efc; /* Purple accent on hover */
+      color: #00bcd4; /* Cyan accent on hover */
       text-decoration: underline;
     }
   }
 
   .footer-divider {
-    border-color: #444766;
+    border-color: #2c3e50;
     margin: 2.5rem 0 1.5rem;
   }
 
   .footer-bottom {
     font-weight: 400;
     font-size: 0.875rem;
-    color: #cbd5e1; /* Match body text brightness */
+    color: #b2ebf2; /* Match body text brightness */
   }
 
   .footer-social {
     a.social-icon {
       font-size: 1.4rem;
-      color: #d1d9e6;
+      color: #b2ebf2;
       transition: color 0.3s ease, transform 0.25s ease;
       display: inline-flex;
       align-items: center;
       justify-content: center;
 
       &:hover {
-        color: #868efc;
+        color: #00bcd4;
         transform: scale(1.2);
       }
     }

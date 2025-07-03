@@ -24,24 +24,24 @@ export class OurTrucksComponent {
   trucks: Truck[] = [
     {
       name: 'Renault Master',
-      model: 'Master',
+      model: 'Master 3',
       engine: '2.3L Inline-4 Diesel',
       capacity: '<3.5 Tons',
       carrying_capacity: '1.1 Tons',
       year: 2014,
       description:
-        'The Renault Master L3H2 offers versatile cargo space and efficient performance, great for urban deliveries and medium-distance transport.',
+        'The Renault Master 3 offers versatile cargo space and efficient performance, great for urban deliveries and medium-distance transport.',
       image: 'staro_kombe.jpg',
     },
     {
       name: 'Renault Master',
-      model: 'Master L2H2',
+      model: 'Master 3',
       engine: '2.3L Inline-4 Diesel',
       capacity: '<3.5 Tons',
       carrying_capacity: '1.1 Tons',
       year: 2019,
       description:
-        'The Renault Master L2H2 is compact yet powerful, suited for flexible logistics and easy maneuverability in city environments.',
+        'The Renault Master 3 is compact yet powerful, suited for flexible logistics and easy maneuverability in city environments.',
       image: 'novo_kombe.jpg',
     },
   ];

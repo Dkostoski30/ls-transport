@@ -1,15 +1,15 @@
 .container {
   max-width: 900px;
   margin: 0 auto;
-  color: #cfd8dc;
-  background: linear-gradient(135deg, #1e1e2f 0%, #121212 100%);
+  color: #e0f7fa;
+  background: linear-gradient(135deg, rgba(30, 30, 47, 0.71) 0%, rgba(18, 18, 18, 0.7) 100%);
   border-radius: 16px;
   padding: 3rem 2rem;
-  box-shadow: 0 10px 30px rgba(134, 158, 252, 0.4);
+  box-shadow: 0 10px 30px rgba(0, 188, 212, 0.35);
 }
 
 .page-title {
-  color: #868efc;
+  color: #00bcd4; /* Cyan header */
   font-weight: 700;
   letter-spacing: 0.05em;
   text-align: center;
@@ -18,7 +18,7 @@
 
 .page-subtitle {
   text-align: center;
-  color: #a0aec0;
+  color: #b2ebf2;
   font-weight: 400;
   font-size: 1.1rem;
   margin-bottom: 3rem;
@@ -28,27 +28,29 @@
   display: grid;
   grid-template-columns: 1fr;
   gap: 3rem;
+}
 
-  @media (min-width: 768px) {
+@media (min-width: 768px) {
+  .truck-cards {
     grid-template-columns: 1fr 1fr;
   }
 }
 
 .truck-card {
-  background: #24243e;
+  background: #1b1b2d;
   border-radius: 16px;
-  box-shadow: 0 6px 20px rgba(134, 158, 252, 0.3);
+  box-shadow: 0 6px 20px rgba(0, 188, 212, 0.25);
   overflow: hidden;
   display: flex;
   flex-direction: column;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: default;
+}
 
-  &:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 14px 40px rgba(134, 158, 252, 0.5);
-    cursor: pointer;
-  }
+.truck-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 40px rgba(0, 188, 212, 0.5);
+  cursor: pointer;
 }
 
 .truck-image img {
@@ -56,10 +58,10 @@
   height: 220px;
   object-fit: cover;
   transition: transform 0.3s ease;
+}
 
-  &:hover {
-    transform: scale(1.05);
-  }
+.truck-image img:hover {
+  transform: scale(1.05);
 }
 
 .truck-info {
@@ -70,7 +72,7 @@
 }
 
 .truck-name {
-  color: #868efc;
+  color: #00bcd4; /* Cyan */
   font-weight: 700;
   font-size: 1.7rem;
 }
@@ -78,39 +80,40 @@
 .truck-description {
   font-weight: 300;
   font-size: 1rem;
-  color: #d1d9e6;
-  min-height: 70px; /* keep consistent card height */
+  color: #b2ebf2;
+  min-height: 70px;
 }
 
 .truck-specs {
-  color: #a0aec0;
+  color: #80deea; /* Soft light cyan */
   font-weight: 500;
   list-style: none;
   padding: 0;
   margin: 0;
-
-  li {
-    margin-bottom: 0.5rem;
-
-    strong {
-      color: #868efc;
-      font-weight: 600;
-      margin-right: 0.3rem;
-    }
-  }
 }
 
+.truck-specs li {
+  margin-bottom: 0.5rem;
+}
+
+.truck-specs li strong {
+  color: #00bcd4;
+  font-weight: 600;
+  margin-right: 0.3rem;
+}
+
+/* Call-to-action button */
 .btn-outline-primary {
-  border-color: rgba(134, 158, 252, 0.8);
-  color: #868efc;
+  border-color: rgba(0, 188, 212, 0.8);
+  color: #00bcd4;
   text-transform: uppercase;
   letter-spacing: 0.05em;
   font-weight: 600;
   transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+}
 
-  &:hover {
-    background-color: rgba(134, 158, 252, 0.8);
-    color: #121212;
-    box-shadow: 0 0 15px rgba(134, 158, 252, 0.9);
-  }
+.btn-outline-primary:hover {
+  background-color: rgba(0, 188, 212, 0.8);
+  color: #121212;
+  box-shadow: 0 0 15px rgba(0, 188, 212, 0.9);
 }
